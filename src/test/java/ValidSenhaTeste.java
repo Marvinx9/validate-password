@@ -19,7 +19,7 @@ public class ValidSenhaTeste {
     @Test
     public void deveDarErroDeSenhaLetraMaiuscula() {
         //Arrange
-        int expected = 11122;
+        int expected = 11121;
 
         //Act
         int actual = ValidSenha.validar("senhasenletra1@maiuscula");
@@ -31,7 +31,7 @@ public class ValidSenhaTeste {
     @Test
     public void deveDarErroDeSenhaLetraMinuscula() {
         //Arrange
-        int expected = 11222;
+        int expected = 11211;
 
         //Act
         int actual = ValidSenha.validar("TEST@7XSXSS");
@@ -43,7 +43,7 @@ public class ValidSenhaTeste {
     @Test
     public void deveDarErroDeSenhaNumero() {
         //Arrange
-        int expected = 12222;
+        int expected = 12111;
 
         //Act
         int actual = ValidSenha.validar("TEST@ssXSXSS");
@@ -55,7 +55,7 @@ public class ValidSenhaTeste {
     @Test
     public void deveDarErroDeSenhaCaractereEspecial() {
         //Arrange
-        int expected = 22222;
+        int expected = 21111;
 
         //Act
         int actual = ValidSenha.validar("TEST7ssXSS");
@@ -67,10 +67,10 @@ public class ValidSenhaTeste {
     @Test
     public void deveDarErroDeSenhaComEspaco() {
         //Arrange
-        int expected = 11112;
+        int expected = 12122;
 
         //Act
-        int actual = ValidSenha.validar("aA  1@  ");
+        int actual = ValidSenha.validar("a @  ");
 
         //Assert
         assertEquals(expected, actual);

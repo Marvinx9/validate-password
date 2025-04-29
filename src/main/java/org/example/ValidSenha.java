@@ -10,19 +10,19 @@ public class ValidSenha {
         }
 
         if(!senhaSemEspaco.matches(".*[A-Z].*")) {
-            erros +=11;
+            erros +=10;
         }
 
         if(!senhaSemEspaco.matches(".*[a-z].*")) {
-            erros +=111;
+            erros +=100;
         }
 
         if(!senhaSemEspaco.matches(".*[0-9].*")) {
-            erros +=1111;
+            erros +=1000;
         }
 
         if (!senhaSemEspaco.matches(".*[!@#$%&].*")) {
-            erros +=11111;
+            erros +=10000;
         }
 
         System.out.println(erros);
